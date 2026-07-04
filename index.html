@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/media.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarSupportedContent"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="left-content d-flex align-items-center gap-2">
+          <div
+            class="left-icon rounded-circle d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-utensils text-white"></i>
+          </div>
+          <div class="left-text">
+            <h3>What's For Dinner</h3>
+            <p>Your daily meal inspiration</p>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav right-content ms-auto d-flex align-items-center gap-3"
+          >
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-solid fa-bookmark"></i>
+              <span class="nav-label">Saved Recipes</span>
+            </li>
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <span class="nav-label">Recent</span>
+            </li>
+            <li class="nav-item d-flex align-items-center gap-2">
+              <i class="fa-solid fa-gear"></i>
+              <span class="nav-label">Settings</span>
+            </li>
+            <li class="nav-item d-flex align-items-center gap-2">
+              <img
+                src="./assets/images/avatar-2.jpg"
+                alt="avatar-2"
+                class="rounded-circle"
+              />
+              <span class="nav-label">Profile</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- --------------------main page------------------ -->
+    <section class="main-page">
+      <div class="container-fluid container-lg">
+        <div class="food-card"></div>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
