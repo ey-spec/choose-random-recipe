@@ -73,6 +73,10 @@
   --color-scrollbar-thumb-hover: oklch(75% 0.15 35 / 0.5);
 }
 
+.custom-container{
+  padding-inline: 0px;
+}
+
 /*-----------------------------nav bar-------------------------*/
 
 nav {
