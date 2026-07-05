@@ -111,6 +111,11 @@
   .heading-text {
     margin-top: calc(var(--spacing) * 14);
   }
+
+  .card-right {
+    padding: calc(var(--spacing) * 5);
+
+  }
 }
 
 @media (max-width: 768px) {
