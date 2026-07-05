@@ -87,7 +87,7 @@
   }
 
   #myTab .nav-link {
-    font-size: var(--text-xs);
+    font-size: var(--text-base) !important;
   }
 
   .nutrition-item span:first-of-type {
@@ -106,5 +106,44 @@
   .card-left,
   .card-left img {
     height: 400px !important;
+  }
+
+  .heading-text {
+    margin-top: calc(var(--spacing) * 14);
+  }
+}
+
+@media (max-width: 768px) {
+  #myTab {
+    flex-wrap: nowrap;
+  }
+
+  #myTab .nav-link {
+    font-size: var(--text-xs) !important;
+  }
+
+  #myTab .nav-item {
+    flex: 1;
+    min-width: 0;
+  }
+
+  #myTab .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 1);
+    padding-inline: calc(var(--spacing) * 1);
+    font-size: var(--text-xs);
+    min-width: 0;
+    width: 100%;
+  }
+
+  #myTab .nav-link span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    flex: 1;
   }
 }

@@ -530,11 +530,13 @@ function renderRecipe(recipe) {
 
       <div class="col-12 col-lg-7">
         <div class="card-right">
-          <span class="level rounded-pill">${recipe.level_tag}</span>
-          <span class="region rounded-pill">${recipe.region_tag}</span>
 
           <div class="right-heading d-flex justify-content-between align-items-start">
             <div class="heading-text">
+              <div class="tags-row">
+                <span class="level rounded-pill">${recipe.level_tag}</span>
+                <span class="region rounded-pill">${recipe.region_tag}</span>
+              </div>
               <h4>${recipe.name}</h4>
               <p>${recipe.description}</p>
             </div>
@@ -549,22 +551,22 @@ function renderRecipe(recipe) {
           <ul class="nav nav-tabs d-flex justify-content-between" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients-tab-pane" type="button" role="tab" aria-controls="ingredients-tab-pane" aria-selected="true">
-                <i class="fa-solid fa-list-check"></i> Ingredients
+                <i class="fa-solid fa-list-check"></i> <span>Ingredients</span>
               </button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="instructions-tab" data-bs-toggle="tab" data-bs-target="#instructions-tab-pane" type="button" role="tab" aria-controls="instructions-tab-pane" aria-selected="false">
-                <i class="fa-solid fa-book-open"></i> Instructions
+                <i class="fa-solid fa-book-open"></i> <span>Instructions</span>
               </button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="nutrition-tab" data-bs-toggle="tab" data-bs-target="#nutrition-tab-pane" type="button" role="tab" aria-controls="nutrition-tab-pane" aria-selected="false">
-                <i class="fa-solid fa-chart-pie"></i> Nutrition
+                <i class="fa-solid fa-chart-pie"></i> <span>Nutrition</span>
               </button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips-tab-pane" type="button" role="tab" aria-controls="tips-tab-pane" aria-selected="false">
-                <i class="fa-solid fa-lightbulb"></i> Chef's Tips
+                <i class="fa-solid fa-lightbulb"></i> <span>Chef's Tips</span>
               </button>
             </li>
           </ul>
@@ -640,7 +642,6 @@ function renderRecipe(recipe) {
     </div>
   `;
 }
-
 
 renderRecipe(getRandomRecipe());
 

@@ -73,7 +73,7 @@
   --color-scrollbar-thumb-hover: oklch(75% 0.15 35 / 0.5);
 }
 
-.custom-container{
+.custom-container {
   padding-inline: 0px;
 }
 
@@ -245,7 +245,15 @@ nav .container {
   padding-inline: calc(var(--spacing) * 3);
   font-size: var(--text-xs);
   font-weight: var(--font-weight-semibold);
-  margin-right: calc(var(--spacing) * 2);
+  margin-bottom: calc(var(--spacing) * 2);
+  display: inline-block;
+}
+
+.tags-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: calc(var(--spacing) * 2);
+  overflow-x: auto;
 }
 
 .level {
@@ -262,6 +270,11 @@ nav .container {
   margin-top: calc(var(--spacing) * 2);
 }
 
+.heading-text {
+  flex: 1;
+  min-width: 0;
+}
+
 .heading-text h4 {
   font-size: var(--text-4xl);
   font-weight: var(--font-weight-bold);
@@ -273,6 +286,9 @@ nav .container {
   font-size: var(--text-lg);
   color: var(--color-gray-600);
   margin-bottom: 0;
+  width: 100%;
+  max-width: none;
+  white-space: normal;
 }
 
 .heading-icons {
@@ -309,6 +325,8 @@ nav .container {
   gap: 5px;
   font-size: var(--text-base);
 }
+
+
 
 #myTab .nav-link:hover {
   color: var(--color-gray-700);
