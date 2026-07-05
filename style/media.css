@@ -108,13 +108,23 @@
     height: 400px !important;
   }
 
-  .heading-text {
-    margin-top: calc(var(--spacing) * 14);
-  }
-
   .card-right {
     padding: calc(var(--spacing) * 5);
+  }
 
+  .right-heading {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .heading-text {
+    width: 100%;
+    margin-top: calc(var(--spacing) * 4);
+  }
+
+  .heading-icons {
+
+    align-self: flex-end;
   }
 }
 
