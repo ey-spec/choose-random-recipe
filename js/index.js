@@ -531,7 +531,7 @@ function renderRecipe(recipe) {
       <div class="col-12 col-lg-7">
         <div class="card-right">
 
-          <div class="right-heading d-flex justify-content-between align-items-start">
+          <div class="right-heading d-flex justify-content-between align-items-center">
             <div class="heading-text">
               <div class="tags-row">
                 <span class="level rounded-pill">${recipe.level_tag}</span>
