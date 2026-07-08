@@ -118,12 +118,20 @@ nav .container {
 .right-content i {
   font-size: var(--text-xl);
   color: var(--color-gray-600);
-  cursor: pointer;
+}
+
+.right-content i,
+.right-content span {
   transition: color 0.2s ease;
 }
 
-.right-content i:hover {
-  color: var(--color-orange-500);
+.nav-item:hover span,
+.nav-item:hover i {
+  color: var(--color-orange-500) !important;
+}
+
+.right-content {
+  cursor: pointer;
 }
 
 .right-content img {
