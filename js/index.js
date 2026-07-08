@@ -451,8 +451,14 @@ var recipes = [
   },
 ];
 
+var lastIndex = -1;
+
 function getRandomRecipe() {
   var index = Math.floor(Math.random() * recipes.length);
+  while (index === lastIndex) {
+    index = Math.floor(Math.random() * recipes.length);
+  }
+  lastIndex = index;
   return recipes[index];
 }
 
