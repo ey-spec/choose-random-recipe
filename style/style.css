@@ -305,6 +305,11 @@ nav .container {
   color: var(--color-orange-600);
   border-radius: var(--radius-xl);
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.heading-icons i:hover {
+  background-color: var(--color-orange-200);
 }
 
 .nav-tabs {
