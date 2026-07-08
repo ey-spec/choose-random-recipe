@@ -50,6 +50,69 @@
     margin-top: 1rem;
   }
 
+  .recipe-button {
+    padding-block: calc(var(--spacing) * 2);
+    padding-inline: calc(var(--spacing) * 4);
+  }
+
+  .card-left,
+  .card-left img {
+    height: 400px !important;
+  }
+
+  .card-right {
+    padding: calc(var(--spacing) * 5);
+  }
+
+  .right-heading {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .heading-text {
+    width: 100%;
+    margin-top: calc(var(--spacing) * 4);
+  }
+
+  .heading-icons {
+    align-self: flex-end;
+  }
+
+  #myTab .nav-link {
+    font-size: var(--text-base) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #myTab {
+    flex-wrap: nowrap;
+  }
+
+  #myTab .nav-link {
+    font-size: var(--text-xs) !important;
+  }
+
+  #myTab .nav-item {
+    flex: 1;
+    min-width: 0;
+  }
+
+  #myTab .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 1);
+    padding-inline: calc(var(--spacing) * 1);
+    width: 100%;
+  }
+
+  #myTab .nav-link span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .rating {
     font-size: var(--text-sm);
   }
@@ -86,75 +149,11 @@
     font-size: var(--text-xs);
   }
 
-  #myTab .nav-link {
-    font-size: var(--text-base) !important;
-  }
-
   .nutrition-item span:first-of-type {
     font-size: var(--text-xs);
   }
 
   .nutrition-item span:last-of-type {
     font-size: var(--text-base);
-  }
-
-  .recipe-button {
-    padding-block: calc(var(--spacing) * 2);
-    padding-inline: calc(var(--spacing) * 4);
-  }
-
-  .card-left,
-  .card-left img {
-    height: 400px !important;
-  }
-
-  .card-right {
-    padding: calc(var(--spacing) * 5);
-  }
-
-  .right-heading {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-  }
-
-  .heading-text {
-    width: 100%;
-    margin-top: calc(var(--spacing) * 4);
-  }
-
-  .heading-icons {
-    align-self: flex-end;
-  }
-}
-
-@media (max-width: 768px) {
-  #myTab {
-    flex-wrap: nowrap;
-  }
-
-  #myTab .nav-link {
-    font-size: var(--text-xs) !important;
-  }
-
-  #myTab .nav-item {
-    flex: 1;
-    min-width: 0;
-  }
-
-  #myTab .nav-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: calc(var(--spacing) * 1);
-    padding-inline: calc(var(--spacing) * 1);
-    font-size: var(--text-xs);
-    width: 100%;
-  }
-
-  #myTab .nav-link span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
