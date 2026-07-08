@@ -160,6 +160,14 @@ nav .container {
   margin-bottom: calc(var(--spacing) * 8);
 }
 
+.card-left {
+  height: 750px;
+}
+
+.card-left img {
+  height: 750px;
+}
+
 .image-span {
   box-shadow:
     0 10px 15px -3px var(--tw-shadow-color, #0000001a),
@@ -316,8 +324,6 @@ nav .container {
   gap: 5px;
   font-size: var(--text-base);
 }
-
-
 
 #myTab .nav-link:hover {
   color: var(--color-gray-700);

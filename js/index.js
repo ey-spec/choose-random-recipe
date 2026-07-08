@@ -500,7 +500,7 @@ function renderRecipe(recipe) {
           <img
             src="${recipe.image}"
             alt="${recipe.name}"
-            class="w-100 h-100 object-fit-cover"
+            class="w-100 object-fit-cover"
           />
           <span class="image-span position-absolute rounded-pill d-flex gap-1 align-items-center">
             <i class="fa-solid fa-star"></i>
