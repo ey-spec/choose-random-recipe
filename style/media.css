@@ -41,8 +41,13 @@
   }
 
   .navbar-toggler i {
-    font-size: var(--text-2xl);
+    font-size: 24px;
     color: var(--color-gray-600);
+    transition: all 0.1s ease;
+  }
+
+  .navbar-toggler i:hover {
+    color: var(--color-orange-600) !important;
   }
 
   .navbar-collapse {
